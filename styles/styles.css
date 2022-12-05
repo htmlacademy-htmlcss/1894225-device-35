@@ -42,6 +42,7 @@ body {
   margin: auto;
   width: 1160px;
   background-color: #FFE17F;
+  margin-top: 40px;
 }
 
 .visually-hidden {
@@ -56,12 +57,7 @@ ul {
 
 .undecorated-link  {
   text-decoration: none;
-  color: black;
-}
-
-.page-header {
-  width: 1160px;
-  margin-top: 40px;
+  color: #000000;
 }
 
 .main-container {
@@ -88,10 +84,6 @@ ul {
   width: 1040px;
 }
 
-.navigation-link {
-  margin-left: 61px;
-}
-
 .compare {
   margin-left: 187px;
 }
@@ -104,16 +96,14 @@ ul {
 }
 
 .navigation-link {
-  color: black;
+  margin-left: 61px;
+  color: #000000;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
 }
 
 .navigation-link-secondary {
-  color: black;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
   line-height: 21px;
   font-weight: 800;
   text-transform: uppercase;
@@ -137,9 +127,8 @@ ul {
   background-image: url(/images/arrow_left.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-color: white;
-  border: 0;
-
+  background-color:  #FFFFFF;
+  border: none;
 }
 
 .slider-next {
@@ -155,7 +144,7 @@ ul {
 }
 
 .slider-number {
-  color: white;
+  color:  #FFFFFF;
   font-size: 180px;
   line-height: 30px;
   font-weight: 700;
@@ -179,19 +168,19 @@ ul {
 }
 
 .slider-pagination-button {
-  background-color: white;
+  background-color:  #FFFFFF;
   border-radius: 50%;
-  border: 2px solid black;
+  border: 2px solid #000000;
   width: 12px;
   height: 16px;
 }
 
 .slider-pagination-button-current {
-  background-color: black;
+  background-color: #000000;
 }
 
 .title {
-  color: black;
+  color: #000000;
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
@@ -216,7 +205,7 @@ ul {
 }
 
 .button-yellow {
-  color: black;
+  color: #000000;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -227,6 +216,7 @@ ul {
 
 .products-card{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 1160px;
   margin-bottom: 70px;
@@ -235,7 +225,7 @@ ul {
 }
 
 .metres {
-  color: black;
+  color: #000000;
   font-size: 36px;
   line-height: 30px;
   font-weight: 400;
@@ -250,15 +240,17 @@ ul {
   margin: 0;
 }
 
-
 .yellow-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #FFE17F;
   width: 160px;
   height: 160px;
 }
 
 .product {
-  color: black;
+  color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -266,34 +258,9 @@ ul {
   letter-spacing: -0.02em;
 }
 
-.vr {
-  padding-top: 53px;
-  padding-left: 32px;
-}
-
 .selfie {
   padding-top: 43px;
-  padding-left: 37px;
-}
-
-.camera {
-  padding-top: 36px;
-  padding-left: 44px;
-}
-
-.fitness-bracelet {
-  padding-top: 47px;
-  padding-left: 26px;
-}
-
-.smartwatch {
-  padding-top: 31px;
-  padding-left: 52px;
-}
-
-.drone {
-  padding-top: 45px;
-  padding-left: 14px;
+  padding-left: 6px;
 }
 
 .delivery {
@@ -316,7 +283,7 @@ ul {
 }
 
 .delivery-info-text {
-  color: black;
+  color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 20px;
@@ -359,7 +326,7 @@ ul {
 
 .list-about-text {
   list-style-type: circle;
-  color: black;
+  color: #000000;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
@@ -391,7 +358,6 @@ ul {
   width: 100%;
   padding-top: 62px;
   margin: auto;
-
 }
 
 .footer-container {
@@ -400,7 +366,7 @@ ul {
 }
 
 .address {
-  color: white;
+  color: #FFFFFF;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -414,7 +380,7 @@ ul {
 }
 
 .footer-navigation-item {
-  color: white;
+  color: #FFFFFF;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -428,7 +394,7 @@ margin-bottom: 35px;
 }
 
 .navigation-number {
-  color: white;
+  color: #FFFFFF;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
