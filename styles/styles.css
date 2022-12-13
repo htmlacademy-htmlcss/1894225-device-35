@@ -510,6 +510,25 @@ right: -66px;
 
 .third, .fourth {
   margin: 47px 0 48px;
+  position: relative;
+}
+
+.third::before {
+  position: absolute;
+  content: "";
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
+  top: -47px;
+}
+
+.fourth::before {
+  position: absolute;
+  content: "";
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
+  top: -47px;
 }
 
 .contacts {
@@ -518,15 +537,20 @@ right: -66px;
 
 .list-about {
   margin: 30px 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  padding-left: 17px;
 }
 
 .list-about-text {
-  list-style-type: circle;
+  list-style-image: url(/images/circle.png);
   color: #000000;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
   letter-spacing: -0.02em;
+  padding-left: 26px;
 }
 
 .title-second {
