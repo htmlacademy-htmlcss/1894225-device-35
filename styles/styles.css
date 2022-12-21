@@ -200,6 +200,11 @@ ul {
   left: -27px;
 }
 
+.navigation-link-entrance:hover:before {
+  color: #7C6B30;
+}
+
+
 .navigation-link-compare, .navigation-link-basket, .navigation-link-secondary-catalog,
 .delivery-navigation-item-current, .address {
   position: relative;
@@ -367,19 +372,15 @@ ul {
   letter-spacing: 0.2em;
   position: relative;
   text-align: center;
-  padding-left: 39px;
+  padding: 10px 39px 10px 39px;
 }
 
 .button-yellow:hover {
   background-color: #FFE17F;
-  width: 220px;
-  height: 40px;
 }
 
 .button-yellow:active {
   background-color: #FFCC33;
-  width: 220px;
-  height: 40px;
 }
 
 .button-yellow:focus {
@@ -392,9 +393,13 @@ ul {
   height: 8px;
   background-color: #FFE17F;
   position: absolute;
-  top: 7px;
+  top: 17px;
   z-index: -1;
-  right: -33px;
+  right: 0;
+}
+
+.button-yellow:hover:before {
+  display: none;
 }
 
 .products-card{
@@ -574,6 +579,7 @@ ul {
   background-repeat: no-repeat;
   top: 0;
   display: flex;
+  background-position: center;
 }
 
 .columns {
@@ -644,7 +650,7 @@ ul {
 }
 
 .button-yellow-info {
-  padding-left: 22px;
+  padding: 10px 25px 10px 25px;
 }
 
 .button-yellow-info::after {
@@ -653,13 +659,21 @@ ul {
   height: 8px;
   background-color: #FFE17F;
   position: absolute;
-  top: 7px;
+  top: 17px;
   z-index: -1;
-  left: -3px;
+  left: 0;
 }
 
-.button-yellow-contact {
-  padding-left: 33px;
+.button-yellow-info:hover {
+  background-color: #FFE17F;
+}
+
+.button-yellow-info:active {
+  background-color: #FFCC33;
+}
+
+.button-yellow-info:focus {
+  border: 2px solid #AF4FFF;
 }
 
 .button-yellow-contact::after {
@@ -668,9 +682,21 @@ ul {
   height: 8px;
   background-color: #FFE17F;
   position: absolute;
-  top: 7px;
+  top: 16px;
   z-index: -1;
-  left: -3px;
+  left: 0;
+}
+
+.button-yellow-contact:hover {
+  background-color: #FFE17F;
+}
+
+.button-yellow-contact:active {
+  background-color: #FFCC33;
+}
+
+.button-yellow-contact:focus {
+  border: 2px solid #AF4FFF;
 }
 
 .number {
