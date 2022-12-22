@@ -25,11 +25,42 @@
               <input class="field" placeholder="Поиск по сайту" type="search" name="search" id="search" required>
                 <button class="button-search"  type="submit">Найти</button>
           </form>
-          <div class="navigation-list">
-            <a class="navigation-link navigation-link-entrance undecorated-link" href="#">Войти</a>
-            <a class="navigation-link navigation-link-compare undecorated-link compare" href="#">Сравнить</a>
-            <a class="navigation-link navigation-link-basket undecorated-link" href="#">Корзина</a>
-          </div>
+          <ul class="navigation-list">
+            <li class="navigation-link navigation-link-entrance">
+              <svg class="login" width="13" height="12" viewBox="0 0 13 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 12H13C12.8 9.4 10.9 7.2 8.3 6.5C9.3 5.9 10 4.8 10 3.5C10 1.6 8.4 0 6.5 0C4.6 0 3 1.6 3 3.5C3 4.8 3.7 5.9 4.7 6.5C2.1 7.2 0.2 9.4 0 12Z" fill="currentColor"/>
+              </svg>
+              <a class="undecorated-link" href="#">Войти</a>
+            </li>
+            <li class="navigation-link navigation-link-compare">
+              <svg class="compare" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_37572_587)">
+                <path d="M6 0H4V12H6V0Z" fill="currentColor"/>
+                <path d="M2 4H0V12H2V4Z" fill="currentColor"/>
+                <path d="M10 3H8V12H10V3Z" fill="currentColor"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_37572_587">
+                <rect width="10" height="12" fill="currentColor"/>
+                </clipPath>
+                </defs>
+                </svg>
+              <a class="undecorated-link" href="#">Сравнить</a>
+            </li>
+            <li class="navigation-link navigation-link-basket">
+              <svg class="basket" width="16" height="14" viewBox="0 0 16 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_37572_593)">
+                <path d="M15.3 5L11.8 5.2L8.6 0.3C8.5 0.1 8.2 0 8 0C7.8 0 7.5 0.1 7.4 0.3L4.2 5.2H0.7C0.3 5.2 0 5.5 0 5.9C0 6 0 6 0 6.1L1.9 12.9C2.1 13.6 2.6 14 3.3 14H12.7C13.4 14 13.9 13.6 14.1 12.9L16 6C16 5.9 16 5.9 16 5.8C16 5.4 15.7 5 15.3 5ZM8 1.9L10.2 5.1H5.9L8 1.9Z" fill="currentColor"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_37572_593">
+                <rect width="16" height="14" fill="currentColor"/>
+                </clipPath>
+                </defs>
+                </svg>
+              <a class="undecorated-link" href="#">Корзина</a>
+            </li>
+          </ul>
         </div>
         <div class="navigation-secondary">
           <a class="navigation-link-secondary navigation-link-secondary-catalog  undecorated-link" href="#">Каталог товаров</a>
@@ -117,7 +148,7 @@
           </a>
         </li>
         <li class="products">
-          <a class="undecorated-link" href="#">
+          <a class="undecorated-link products" href="#">
             <div class="yellow-image">
               <svg class="selfie" width="87" height="117" viewBox="0 0 87 117" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M82.821 4.011H3.33003C1.56903 4.011 0.142029 5.438 0.142029 7.199V53.612C0.142029 55.375 1.56903 56.801 3.33003 56.801H82.822C84.584 56.801 86.011 55.374 86.011 53.612V7.199C86.011 5.438 84.583 4.011 82.821 4.011ZM8.39203 37.236H8.16603C6.40403 37.236 4.97703 35.807 4.97703 34.047V26.764C4.97703 25.003 6.40403 23.576 8.16603 23.576H8.39203V37.236ZM69.623 52.408H13.341V8.402H69.623V52.408ZM78.4 34.552C76.111 34.552 74.254 32.697 74.254 30.405C74.254 28.113 76.11 26.258 78.4 26.258C80.691 26.258 82.548 28.113 82.548 30.405C82.548 32.697 80.691 34.552 78.4 34.552Z" fill="currentColor"/>
@@ -129,7 +160,7 @@
           </a>
         </li>
         <li class="products">
-          <a class="undecorated-link" href="#">
+          <a class="undecorated-link products" href="#">
             <div class="yellow-image">
               <svg class="camera" width="72" height="87" viewBox="0 0 72 87" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M53.349 1.49C53.349 0.754 52.771 0 52.038 0H9.053C8.32 0 7.672 0.754 7.672 1.49V5.012H53.348L53.349 1.49Z" fill="currentColor"/>
@@ -148,7 +179,7 @@
           </a>
         </li>
         <li class="products">
-          <a class="undecorated-link" href="#">
+          <a class="undecorated-link products" href="#">
             <div class="yellow-image">
               <svg class="fitness-bracelet" width="108" height="66" viewBox="0 0 108 66" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M98.967 5.07411C99.719 6.51511 100.176 8.15411 100.176 9.89211V30.9941C100.176 35.6101 97.084 39.5211 92.93 40.8941C91.605 44.8811 89.152 48.7481 84.879 51.3261C76.203 56.5571 53.755 56.1631 53.681 56.1631C53.603 56.1631 31.168 56.5581 22.492 51.3261C18.276 48.7811 15.784 44.9791 14.45 41.0471C10.032 39.8381 6.694 35.7961 6.694 30.9941V9.89311C6.694 8.20511 7.121 6.61111 7.833 5.20011C4.17 6.10911 0 7.91811 0 11.4341C0 17.6771 0 37.1211 0 41.4171C0 51.6681 11.839 65.8501 53.657 65.8501C95.477 65.8501 107.314 51.6681 107.314 41.4171C107.314 37.1211 107.314 17.6771 107.314 11.4341C107.313 7.75011 102.738 5.94011 98.967 5.07411Z" fill="currentColor"/>
@@ -159,7 +190,7 @@
           </a>
         </li>
         <li class="products">
-          <a class="undecorated-link" href="#">
+          <a class="undecorated-link products" href="#">
             <div class="yellow-image">
               <svg class="smartwatch" width="57" height="98" viewBox="0 0 57 98" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M54.494 32.197H52.979V27.557C52.979 22.505 48.892 18.371 43.897 18.371H9.082C4.086 18.372 0 22.505 0 27.557V70.425C0 75.477 4.087 79.61 9.083 79.61H43.898C48.893 79.61 52.98 75.477 52.98 70.425V67.01H54.495C54.91 67.01 55.252 66.666 55.252 66.246V52.467C55.252 52.046 54.91 51.701 54.495 51.701H52.98V42.913H54.495C55.327 42.913 56.009 42.225 56.009 41.382V33.728C56.008 32.886 55.326 32.197 54.494 32.197ZM34.082 29.088C37.008 29.088 39.381 31.486 39.381 34.446C39.381 37.406 37.008 39.804 34.082 39.804C31.156 39.804 28.784 37.406 28.784 34.446C28.784 31.486 31.156 29.088 34.082 29.088ZM18.945 29.088C21.87 29.088 24.243 31.486 24.243 34.446C24.243 37.406 21.87 39.804 18.945 39.804C16.019 39.804 13.647 37.406 13.647 34.446C13.647 31.486 16.019 29.088 18.945 29.088ZM5.297 49.397C5.297 46.438 7.668 44.039 10.595 44.039C13.521 44.039 15.893 46.438 15.893 49.397C15.893 52.356 13.52 54.755 10.595 54.755C7.668 54.756 5.297 52.356 5.297 49.397ZM18.945 68.894C16.019 68.894 13.647 66.496 13.647 63.536C13.647 60.576 16.019 58.178 18.945 58.178C21.87 58.178 24.243 60.576 24.243 63.536C24.243 66.496 21.87 68.894 18.945 68.894ZM20.435 48.991C20.435 45.609 23.146 42.867 26.49 42.867C29.834 42.867 32.545 45.609 32.545 48.991C32.545 52.373 29.834 55.115 26.49 55.115C23.146 55.114 20.435 52.373 20.435 48.991ZM34.082 68.894C31.156 68.894 28.784 66.496 28.784 63.536C28.784 60.576 31.156 58.178 34.082 58.178C37.008 58.178 39.381 60.576 39.381 63.536C39.381 66.496 37.008 68.894 34.082 68.894ZM42.384 54.756C39.457 54.756 37.086 52.357 37.086 49.398C37.086 46.439 39.457 44.04 42.384 44.04C45.31 44.04 47.682 46.439 47.682 49.398C47.682 52.356 45.31 54.756 42.384 54.756Z" fill="currentColor"/>
@@ -171,7 +202,7 @@
           </a>
         </li>
         <li class="products">
-          <a class="undecorated-link" href="#">
+          <a class="undecorated-link products" href="#">
             <div class="yellow-image">
               <svg class="drone" width="133" height="70" viewBox="0 0 133 70" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12.0523 0.257913C6.50738 0.745213 1.83838 1.85073 0.575275 2.93033C-0.147425 3.54653 -0.147425 3.54653 0.342875 4.08653C0.987375 4.80623 4.05628 5.73151 7.59048 6.32281C11.5885 6.99081 20.1003 7.01622 21.3136 6.37412C22.5255 5.70612 22.9376 4.96048 22.9376 3.39268C22.9376 1.77398 22.3185 0.976689 20.7198 0.540189C19.274 0.154289 14.9415 1.33812e-05 12.0523 0.257913Z" fill="currentColor"/>
@@ -208,7 +239,26 @@
         </div>
         </div>
       </section>
+      <div class="delivery-info">
+        <svg class="car" width="47" height="31" viewBox="0 0 47 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M46.7 15.4L40.2 7.2C39.9 6.8 39.5 6.6 39 6.6H30.7V1.5C30.7 0.7 30 0 29.2 0H1.5C0.7 0 0 0.7 0 1.5C0 2.3 0.7 3 1.5 3H27.7V24.7H15.8C15.2 22.8 13.4 21.4 11.3 21.4C8.7 21.4 6.5 23.6 6.5 26.2C6.5 28.8 8.7 31 11.3 31C13.4 31 15.2 29.6 15.8 27.7H29.2C30 27.7 30.7 27 30.7 26.2V9.6H38.3L44 16.9V24.8H41.8C41.2 22.9 39.4 21.5 37.3 21.5C34.7 21.5 32.5 23.7 32.5 26.3C32.5 28.9 34.6 31.1 37.3 31.1C39.4 31.1 41.2 29.7 41.8 27.8H45.5C46.3 27.8 47 27.1 47 26.3V16.4C47 16 46.9 15.7 46.7 15.4ZM11.3 28C10.3 28 9.5 27.2 9.5 26.2C9.5 25.2 10.3 24.4 11.3 24.4C12.3 24.4 13.1 25.2 13.1 26.2C13.1 27.2 12.2 28 11.3 28ZM37.4 28C36.4 28 35.6 27.2 35.6 26.2C35.6 25.2 36.4 24.4 37.4 24.4C38.4 24.4 39.2 25.2 39.2 26.2C39.2 27.2 38.3 28 37.4 28Z" fill="black"/>
+          <path d="M19.4 9.6C20.2 9.6 20.9 8.9 20.9 8.1C20.9 7.3 20.2 6.6 19.4 6.6H4.8C4 6.6 3.3 7.3 3.3 8.1C3.3 8.9 4 9.6 4.8 9.6H19.4Z" fill="black"/>
+          <path d="M17.7 14.7C17.7 13.9 17 13.2 16.2 13.2H1.5C0.7 13.2 0 13.9 0 14.7C0 15.5 0.7 16.2 1.5 16.2H16.2C17 16.2 17.7 15.5 17.7 14.7Z" fill="black"/>
+          </svg>
         <p class="delivery-info-text main-container">Доставим редкий товар под заказ</p>
+        <svg class="info" width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20.5" cy="20" r="20" fill="#DCDCDC" fill-opacity="0.5"/>
+          <g clip-path="url(#clip0_11468_3000)">
+          <path d="M21 14H19V16H21V14Z" fill="black"/>
+          <path d="M21 18H19V26H21V18Z" fill="black"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_11468_3000">
+          <rect width="2" height="12" fill="white" transform="translate(19 14)"/>
+          </clipPath>
+          </defs>
+          </svg>
+      </div>
       <div class="columns main-container">
         <section class="about">
           <h2 class="title third">О нас</h2>
