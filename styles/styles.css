@@ -74,11 +74,11 @@ ul {
 }
 
 .main-logo:hover {
-  color: #666666;
+  opacity: 0.6;
 }
 
 .main-logo:active {
-  color: #B3B3B3;
+  opacity: 0.3;
 }
 
 .main-logo:focus {
@@ -93,7 +93,6 @@ ul {
 
 .navigation-main {
   display: flex;
-  flex-wrap: ;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
@@ -117,11 +116,12 @@ ul {
 }
 
 .field:hover {
-  color: black;
+  color: #000000;
+  outline: transparent;
 }
 
 .field:focus {
-  border: 2px solid #AF4FFF;
+  outline: transparent;
 }
 
 .button-search {
@@ -231,7 +231,7 @@ ul {
   background-repeat: no-repeat;
   width: 1160px;
   height: 200px;
-  bottom: 637px;
+  bottom: 701px;
   z-index: -2;
 }
 
@@ -515,6 +515,11 @@ ul {
   z-index: -1;
 }
 
+.delivery-info {
+  display: flex;
+  align-items: end;
+}
+
 .delivery-info-text {
   color: #000000;
   font-family: "Raleway", sans-serif;
@@ -527,26 +532,18 @@ ul {
   padding: 40px 0 40px;
   text-align: center;
   margin-top: 142px;
-  position: relative;
 }
 
 .car {
-  position: absolute;
   z-index: 1;
-  left: 297px;
-  margin-top: 35px;
   background-color: #FFE17F;
-  padding: 35px 39px 34px 39px;
-  left: 478px;
-  bottom: -789px;
+  padding: 38px 39px 34px 39px;
 }
 
 .info {
-  position: absolute;
   z-index: 1;
-  right: 520px;
-  bottom: -758px;
   opacity: 50%;
+  margin: 0 0 30px -78px;
 }
 
 .info:hover {
@@ -555,6 +552,14 @@ ul {
 
 .delivery-info:active {
   opacity: 0.3;
+}
+
+.delivery-info:hover .car{
+  background-color: #FFC700;
+}
+
+.delivery-info:hover .info{
+  opacity: 100%;
 }
 
 .columns {
@@ -686,12 +691,36 @@ ul {
   margin: 0 252px 144px 0;
 }
 
+.focus {
+  position: relative;
+  display: block;
+  width: fit-content;
+}
+
 .email {
-border: none;
-height: 48px;
-width: 557px;
-background-color: #F0F0F0;
-border-bottom: 3px solid #C4C4C4;
+  border: none;
+  height: 48px;
+  width: 557px;
+  background-color: #F0F0F0;
+  border-bottom: 3px solid #C4C4C4;
+}
+
+.email:hover {
+  outline: transparent;
+}
+
+.email:active {
+  outline: transparent;
+}
+
+.email:focus-within:before {
+  content: '';
+  position: absolute;
+  width: calc(100%+2px);
+  height: calc(100%+2px);
+  border: 2px solid #AF4FFF;
+  left: -2px;
+  top: -2px;
 }
 
 .sign-up-button {
@@ -839,11 +868,11 @@ color: #FFC700;
 }
 
 .yellow-logo:hover {
-  color: #FFDD66;
+  opacity: 0.6;
 }
 
 .yellow-logo:active {
-  color: #FFEEB3;
+  opacity: 0.3;
 }
 
 .yellow-logo:focus {
@@ -878,4 +907,20 @@ color: #FFC700;
 
 .logo-academy:focus {
   border: 2px solid #AF4FFF;
+}
+
+label {
+  display: block;
+  width: fit-content;
+  position: relative;
+}
+
+label:focus-within:before {
+  content: '';
+  position: absolute;
+  width: calc(100%+2px);
+  height: calc(100%+2px);
+  border: 2px solid #AF4FFF;
+  left: -2px;
+  top: -2px;
 }
