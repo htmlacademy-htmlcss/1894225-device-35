@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/logo.ico">
   </head>
   <body>
     <header class="page-header">
@@ -20,10 +20,11 @@
 
       <nav class="navigation">
         <div class="navigation-main">
-          <form class="search focused" action="#" method="post">
-            <label class="visually-hidden" for="search">Поиск по сайту</label>
+          <form class="search" action="#" method="post">
+            <label class="focused" for="search">
               <input class="field" placeholder="Поиск по сайту" type="search" name="search" id="search" required>
-                <button class="button-search"  type="submit">Найти</button>
+            </label>
+                <button class="button-search focused"  type="submit">Найти</button>
           </form>
           <ul class="navigation-list">
             <li class="navigation-link navigation-link-entrance focused">
@@ -225,13 +226,13 @@
         <div class="delivery-block main-container">
         <ul class="delivery-navigation">
           <li>
-            <button class="delivery-button delivery-navigation-item-current" type="button">Доставка</button>
+            <button class="delivery-button delivery-navigation-item-current focused" type="button">Доставка</button>
           </li>
           <li>
-            <button class="delivery-button delivery-navigation-item" type="button">Гарантия</button>
+            <button class="delivery-button delivery-navigation-item focused" type="button">Гарантия</button>
           </li>
           <li>
-            <button class="delivery-button delivery-navigation-item" type="button">Кредит</button>
+            <button class="delivery-button delivery-navigation-item delivery-navigation-item-credit focused" type="button">Кредит</button>
           </li>
         </ul>
         <div class="delivery-description">
@@ -293,9 +294,10 @@
           длительными тест-драйвами, распаковками, а также акции,<br> спецпредложения и вот это вот всё.
           </p>
           <form class="sign-up-email" action="#" method="post">
-            <label class="visually-hidden focus" for="sign-up-email">Email</label>
+            <label class="focused" for="sign-up-email">
             <input class="email" placeholder="Ваш e-mail" type="email" name="sign-up-email" id="sign-up-email" required>
-            <button class="sign-up-button"  type="submit">Подписаться</button>
+          </label>
+            <button class="sign-up-button focused"  type="submit">Подписаться</button>
           </form>
           <p class="main-text free">Это бесплатно</p>
         </div>
