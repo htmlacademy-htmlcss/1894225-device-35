@@ -94,7 +94,6 @@ ul {
 
 .navigation-main {
   display: flex;
-
   align-items: center;
   margin-bottom: 20px;
 }
@@ -377,7 +376,7 @@ ul {
   display: none;
 }
 
-.products-card{
+.products-card {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -605,11 +604,11 @@ ul {
   opacity: 0.3;
 }
 
-.delivery-info:hover .car{
+.delivery-info:hover .car {
   background-color: #FFC700;
 }
 
-.delivery-info:hover .info{
+.delivery-info:hover .info {
   opacity: 100%;
 }
 
