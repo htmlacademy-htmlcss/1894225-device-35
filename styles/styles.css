@@ -109,10 +109,32 @@ ul {
   border: 2px solid #000000;
   border-radius: 50px 0 0 50px;
   background-color: #FFE17F;
+  font-size: 16px;
+}
+
+.field::placeholder {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+  opacity: 0.3;
 }
 
 .field {
   padding-left: 48px;
+  position: relative;
+}
+
+.search::before {
+  content: "";
+  background-image: url(../images/seach_icon.svg);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  z-index: 1;
+  top: 98px;
+  left: 553px;
 }
 
 .field:hover {
@@ -122,6 +144,10 @@ ul {
 
 .field:focus {
   outline: transparent;
+}
+
+.field:disabled {
+  opacity: 0.3;
 }
 
 .button-search {
@@ -137,6 +163,10 @@ ul {
 .button-search:active {
   background-color: #000000;
   color: #4C4C4C;
+}
+
+.button-search:disabled {
+  opacity: 0.3;
 }
 
 .navigation-list {
@@ -165,7 +195,7 @@ ul {
 .navigation-secondary-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 14px;
 }
 
 .navigation-link {
@@ -205,18 +235,20 @@ ul {
   position: relative;
 }
 
-.navigation-link-secondary-catalog::after {
-  width: 50px;
-  height: 50px;
-  content: "";
-  background-image: url(/images/catalog_plus.svg);
-  background-repeat: no-repeat;
-  position: absolute;
-  top: -14px;
-  right: -66px;
+.navigation-link-secondary-catalog {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.plus {
+  margin-left: 17px;
 }
 
 .navigation-link-secondary {
+  font-family: "Raleway";
+  font-style: bold;
+  font-size: 18px;
   line-height: 21px;
   font-weight: 800;
   text-transform: uppercase;
@@ -246,10 +278,14 @@ ul {
   margin-left: -50px;
 }
 
+.slider-image-close {
+  display: none;
+}
+
 .slider-button {
   width: 20px;
   height: 60px;
-  background-image: url(/images/arrow_left.svg);
+  background-image: url(../images/arrow_left.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -268,12 +304,16 @@ ul {
   margin-left: -20px;
 }
 
-.left .right {
+.left .right-active {
   width: 560px;
 }
 
-.right {
+.right-active {
   margin-right: 14px;
+}
+
+.right-close {
+  display: none;
 }
 
 .slider-number {
@@ -303,16 +343,37 @@ ul {
   margin-top: -77px;
 }
 
-.slider-pagination-item {
+.slider-pagination-button, .slider-pagination-button-current  {
   width: 10px;
-  height: 10px;
+  height: 16px;
   border-radius: 50%;
   border: 2px solid #000000;
   margin-top: 14px;
+  background-color: transparent;
+}
+
+.slider-pagination-button:hover {
+  opacity: 0.6;
+}
+
+.slider-pagination-button:active {
+  opacity: 0.3;
+}
+
+.slider-pagination-button:disabled {
+  opacity: 0.1;
 }
 
 .slider-pagination-button-current {
   background-color: #000000;
+}
+
+.slider-pagination-button-current:hover {
+  opacity: 0.6;
+}
+
+.slider-pagination-button-current:active {
+  opacity: 0.3;
 }
 
 .title {
@@ -401,6 +462,10 @@ ul {
   margin: 0;
 }
 
+.products {
+  width: 160px;
+}
+
 .products:active {
   opacity: 0.3;
 }
@@ -466,7 +531,7 @@ ul {
   content: "";
   width: 136px;
   height: 164px;
-  background-image: url(/images/delivery_men.png);
+  background-image: url(../images/delivery_men.png);
   background-repeat: no-repeat;
   right: -236px;
   top: 7px;
@@ -494,11 +559,12 @@ ul {
 }
 
 .delivery-button {
-  min-width: 160px;
+  width: 160px;
   padding-left: 0;
   border: none;
   z-index: 1;
   height: 40px;
+  background-color: transparent;
 }
 
 .delivery-navigation-item:hover {
@@ -581,13 +647,14 @@ ul {
   line-height: 23px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  text-align: center;
+  padding-left: 196px;
 }
 
 .car {
   z-index: 1;
   background-color: #FFE17F;
-  padding: 38px 47px 33px 39px;
+  padding: 38px 39px 33px 39px;
+  width: 73px;
 }
 
 .info {
@@ -655,7 +722,7 @@ ul {
 }
 
 .list-about {
-  margin: 30px 0 36px;
+  margin: 30px 0 28px;
   display: flex;
   flex-direction: column;
   gap: 19px;
@@ -663,7 +730,7 @@ ul {
 }
 
 .list-about-text {
-  list-style-image: url(/images/circle.png);
+  list-style-image: url(../images/circle.png);
   color: #000000;
   font-size: 18px;
   line-height: 20px;
@@ -680,12 +747,19 @@ ul {
   margin: 30px 0 15px 0;
 }
 
+.delivery-description-close {
+  display: none;
+}
+
 .time-text {
-  margin-bottom: 35px;
+  margin-bottom: 29px;
 }
 
 .button-yellow-info {
-  padding: 10px 25px 10px 25px;
+  padding: 11px 0 11px 4px;
+  display: block;
+  width: 270px;
+  text-align: center;
 }
 
 .button-yellow-info::after {
@@ -718,6 +792,13 @@ ul {
   left: 0;
 }
 
+.button-yellow-contact {
+  width: 259px;
+  display: block;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
 .button-yellow-contact:hover {
   background-color: #FFE17F;
 }
@@ -736,10 +817,14 @@ ul {
   min-height: 421px;
 }
 
+.main-text-sign-up {
+  margin-top: 10px;
+}
+
 .sign-up-container {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 68px;
+  padding-top: 64px;
 }
 
 .fifth {
@@ -777,7 +862,7 @@ ul {
 }
 
 .email:focus-within:before {
-  content: '';
+  content: "";
   position: absolute;
   width: calc(100%+2px);
   height: calc(100%+2px);
@@ -788,10 +873,11 @@ ul {
 
 .sign-up-button {
   width: 253px;
-  height: 57px;
+  min-height: 57px;
   border: 3px solid #C4C4C4;
   margin-left: -6px;
   margin-bottom: -2px;
+  background-color: #F0F0F0;
 }
 
 .sign-up-button:hover {
@@ -817,7 +903,7 @@ ul {
   position: absolute;
   width: 14px;
   height: 14px;
-  background-image: url(/images/free.png);
+  background-image: url(../images/free.png);
   top: 20px;
   right: 145px;
 }
@@ -891,13 +977,15 @@ ul {
   padding: 0;
   gap: 30px;
   margin-right: 63px;
+  width: 444px;
 }
 
 .footer-social-list {
   width: 150px;
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
-  justify-content: space-between;
+  justify-content: center;
   margin: 38px auto 61px auto;
   padding: 0;
 }
@@ -933,8 +1021,8 @@ ul {
 }
 
 .yellow-logo {
-color: #FFC700;
-margin-bottom: 20px;
+  color: #FFC700;
+  margin-bottom: 20px;
 }
 
 .yellow-logo:hover {
@@ -955,6 +1043,14 @@ margin-bottom: 20px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+}
+
+.navigation-number:hover {
+  color: #FFC700;
+}
+
+.navigation-number:active {
+  opacity: 0.3;
 }
 
 .html-academy-img {
@@ -980,13 +1076,13 @@ margin-bottom: 20px;
 }
 
 .focused:focus-within:before {
-position: absolute;
-content: '';
-width: calc(100% + 2px);
-height: calc(100% + 2px);
-top: -3px;
-left: -2px;
-border: 2px solid #AF4FFF;
+  position: absolute;
+  content: "";
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  top: -3px;
+  left: -2px;
+  border: 2px solid #AF4FFF;
 }
 
 a:focus-visible {
@@ -1020,4 +1116,231 @@ a:focus-visible {
 .sign-up-button:focus-visible {
   outline: none;
   border: none;
+}
+
+.dropdown-content {
+  padding-top: 30px;
+  position: absolute;
+  background-color: #FFE17F;
+  width: 1160px;
+  z-index: 2;
+  left: 478px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  min-height: 180px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dropdown-content-close {
+  display: none;
+}
+
+.dropdown-content-text {
+  padding-left: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.menu-link:hover {
+  opacity: 0.6;
+}
+
+.menu-link:active {
+  opacity: 0.3;
+}
+
+.menu-link-active {
+  text-decoration: underline;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(240, 240, 240, 0.9);
+  z-index: 2;
+}
+
+.modal-container-close {
+  display: none;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 72px 80px 72px 80px;
+  background-color: #FFFFFF;
+  border: 10px solid #000000;
+  width: 841px;
+}
+
+.modal-close-button {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 83px;
+  right: 73px;
+}
+
+.modal-close-button:hover {
+  opacity: 0.6;
+}
+
+.modal-close-button:active {
+  opacity: 0.3;
+}
+
+.modal-title {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 50px;
+  color: #000000;
+  margin: 0 0 42px 0;
+}
+
+.modal-content {
+  width: 760px;
+}
+
+.name-field, .email-field, .delivery-details-tytle, .counter-details {
+  color: #000000;
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+
+.counter-details, .name-field, .email-field {
+  position: relative;
+}
+
+.counter-details::after {
+  content: "";
+  position: absolute;
+  background-image: url(/images/modal_info.png);
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 26px;
+  top: -3px;
+  left: 123px;
+}
+
+.email-field::after {
+  content: "";
+  position: absolute;
+  background-image: url(/images/modal_email.png);
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 12px;
+  top: 61px;
+  right: 20px;
+}
+
+.name-field::after {
+  content: "";
+  position: absolute;
+  background-image: url(/images/modal_person.png);
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 12px;
+  top: 58px;
+  right: 20px;
+}
+
+.modal-field {
+  height: 60px;
+  background-color: #F0F0F0;
+  border: none;
+  width: 376px;
+  padding-left: 20px;
+}
+
+.name-email {
+  display: flex;
+  gap: 45px;
+}
+
+.field-group {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.email-field-error {
+  border: 2px solid #FF3D3D;
+}
+
+.email-error {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #FF3D3D;
+  display: flex;
+  width: 149px;
+  margin-left: 442px;
+  margin-bottom: 42px;
+}
+
+.details {
+  display: flex;
+  gap: 66px;
+  margin-bottom: 42px;
+}
+
+.modal-field-details {
+  width: 578px;
+}
+
+.field-group-container {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+}
+
+.field-group-counter {
+  display: flex;
+  margin-top: 34px;
+  margin-left: -183px;
+}
+
+.modal-field-number, .counter-minus, .counter-plus {
+  width: 60px;
+  text-align: center;
+  padding: 0;
+}
+
+.counter-minus, .counter-plus {
+  height: 60px;
+  border: none;
+}
+
+.modal-button-yellow {
+  border: none;
+  background-color: transparent;
+  position: relative;
+  z-index: 2;
+}
+
+.modal-button-yellow::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 8px;
+  background-color: #FFE17F;
+  top: 15px;
+  left: 8px;
 }
